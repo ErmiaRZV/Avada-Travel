@@ -1,11 +1,9 @@
 # Avada Travel
- **My first project , created by html5, css3**
+ **My second project**
 
- ![avada_cafe](![avada_travel](https://github.com/user-attachments/assets/e6995421-ffb0-4a6b-961c-1e59271f16d7))
+![avada_travel](https://github.com/user-attachments/assets/e729b009-f9b7-4842-89f0-57c8fa6c4049)
 
-Linkedin : https://www.linkedin.com/in/ermia-razavi-a611312a3/
 
-Github : https://github.com/ErmiaRZV
 - [Demo Project](https://ermiarzv.github.io/Avada-travel/)
 - Developed by Ermia Razavi
 - Created - 2023
