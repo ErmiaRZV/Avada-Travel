@@ -1,0 +1,867 @@
+:root {
+    --p: rgb(101, 101, 163);
+}
+
+body {
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+
+    >.first {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../images/home-banner.webp);
+        background-size: cover;
+        background-position: center;
+
+        >header {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 20px;
+
+            >figure {
+                height: 100%;
+                width: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-right: 20px;
+            }
+
+            >nav {
+                height: 100%;
+
+                &:first-of-type {
+                    width: 60%;
+
+                    >ul {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+
+                        >li {
+
+
+                            margin: 0 10px;
+
+                            >a {
+                                color: white;
+                                display: flex;
+                                width: 100%;
+                                height: 100%;
+                                padding: 15px;
+                                font-size: 14px;
+                                border-radius: 5px;
+                                transition: .4s;
+
+
+
+                                &:hover {
+                                    background-color: var(--p);
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:last-of-type {
+                    width: 20%;
+
+                    >ul {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+
+                        >li {
+                            width: 40px;
+                            height: 40px;
+                            margin: 0 10px;
+
+                            &:nth-of-type(1) {
+                                >a {
+                                    &::after {
+                                        content: "Linkedin";
+                                        height: 20px;
+                                        width: 40px;
+                                        position: absolute;
+                                        left: -5px;
+                                        top: -35px;
+                                        color: white;
+                                        background-color: rgba(0, 0, 0, 0.806);
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 10px;
+                                        border-radius: 5px;
+                                        padding: 5px;
+                                        opacity: 0;
+                                        transition: .4s;
+
+                                    }
+                                }
+
+                            }
+
+                            &:nth-of-type(2) {
+                                >a {
+                                    &::after {
+                                        content: "Github";
+                                        height: 20px;
+                                        width: 40px;
+                                        position: absolute;
+                                        left: -5px;
+                                        top: -35px;
+                                        color: white;
+                                        background-color: rgba(0, 0, 0, 0.806);
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 10px;
+                                        border-radius: 5px;
+                                        padding: 5px;
+                                        opacity: 0;
+                                        transition: .4s;
+
+                                    }
+                                }
+
+                            }
+
+                            &:nth-of-type(3) {
+                                >a {
+                                    &::after {
+                                        content: "Instagram";
+                                        height: 20px;
+                                        width: 40px;
+                                        position: absolute;
+                                        left: -10px;
+                                        top: -35px;
+                                        color: white;
+                                        background-color: rgba(0, 0, 0, 0.806);
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 10px;
+                                        border-radius: 5px;
+                                        padding: 5px 10px;
+                                        opacity: 0;
+                                        transition: .4s;
+
+                                    }
+                                }
+
+                            }
+
+                            &:hover {
+                                >a {
+
+                                    &::after {
+                                        opacity: 1;
+                                    }
+
+                                    >i {
+                                        background-color: var(--p);
+                                    }
+                                }
+                            }
+
+                            >a {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100%;
+                                height: 100%;
+                                position: relative;
+
+
+                                >i {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    transition: .4s;
+                                    border-radius: 5px;
+                                    color: white;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        >div {
+            width: 100%;
+            height: 90%;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            gap: 20px;
+
+            >h1 {
+                color: white;
+                width: 100%;
+                font-weight: normal;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 70px;
+                line-height: 84px;
+                font-family: "Nixie One", system-ui;
+            }
+
+            >h2 {
+                color: white;
+                width: 100%;
+                font-weight: normal;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                line-height: 36px;
+                font-family: "Nixie One", system-ui;
+            }
+
+            >a {
+                color: white;
+                background-color: var(--p);
+                font-size: 18px;
+                line-height: 21px;
+                padding: 20px 40px;
+                border-radius: 5px;
+                margin-bottom: 100px;
+                transition: .2s;
+
+                &:hover {
+                    transform: translate(1px, 1px);
+                    background-color: rgba(106, 106, 180, 0.869);
+                }
+            }
+
+        }
+    }
+
+    >.second {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 60px 0;
+
+        >figure {
+            height: 100%;
+            width: 48%;
+
+            >img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        >div {
+            height: 100%;
+            width: 48%;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            >h4 {
+                color: rgb(51, 51, 51);
+                width: 100%;
+                font-size: 60px;
+                line-height: 72px;
+                font-weight: normal;
+                font-family: "Nixie One", system-ui;
+            }
+
+            >div {
+                height: 1px;
+                width: 20%;
+                background-color: rgb(51, 51, 51);
+            }
+
+            >p {
+                width: 85%;
+                color: rgb(51, 51, 51);
+                font-size: 15px;
+                line-height: 30px;
+
+            }
+        }
+    }
+
+    >.third {
+        display: flex;
+        width: 100%;
+        height: 120vh;
+        flex-wrap: wrap;
+        padding: 60px 20%;
+        justify-content: center;
+        background-color: rgb(240, 240, 237);
+
+        >h4 {
+            font-family: "Nixie One", system-ui;
+            color: rgb(51, 51, 51);
+            font-size: 54px;
+            width: 100%;
+            font-weight: normal;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 104px;
+        }
+
+        >p {
+            font-size: 24px;
+            line-height: 48px;
+            font-family: "Nixie One", system-ui;
+            color: rgb(51, 51, 51);
+            width: 80%;
+            text-align-last: center;
+        }
+
+        >div {
+            &:first-of-type {
+                height: 1px;
+                width: 240px;
+                background-color: rgb(51, 51, 51);
+            }
+
+            &:last-of-type {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+                height: 70vh;
+
+                >figure {
+                    position: relative;
+                    height: 46%;
+                    width: 32%;
+                    overflow: hidden;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(101, 101, 163, 0.588);
+                        opacity: 0;
+                        transition: .4s;
+                        z-index: 1;
+
+                    }
+
+                    * {
+                        transition: .4s;
+
+                    }
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    >h4 {
+                        font-family: "Nixie One", system-ui;
+                        color: white;
+                        position: absolute;
+                        left: 10%;
+                        top: 16%;
+                        font-size: 28px;
+                        line-height: 33px;
+                        font-weight: normal;
+                        z-index: 2;
+                    }
+
+                    >div {
+                        height: 2px;
+                        width: 0px;
+                        position: absolute;
+                        left: 10%;
+                        top: 32%;
+                        background-color: white;
+                        z-index: 2;
+                    }
+
+                    >span {
+                        color: white;
+                        font-size: 13px;
+                        line-height: 22px;
+                        position: absolute;
+                        left: 110%;
+                        top: 36%;
+                        z-index: 2;
+                        width: 400px;
+                    }
+
+                    &:hover {
+                        >img {
+                            scale: 1.2;
+                        }
+
+                        >h4 {}
+
+                        >div {
+                            width: 80%;
+                        }
+
+                        >span {
+                            color: white;
+                            font-size: 13px;
+                            line-height: 22px;
+                            position: absolute;
+                            left: 10%;
+                            top: 36%;
+                        }
+
+                        &::after {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    >.four {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >a {
+            font-size: 18px;
+            line-height: 21px;
+            color: white;
+            background-color: var(--p);
+            padding: 20px 50px;
+            transition: .4s;
+
+            &:hover {
+                transform: translate(1px, 1px);
+                background-color: rgba(106, 106, 180, 0.869);
+            }
+        }
+    }
+
+    >.five {
+        width: 100%;
+        height: 60vh;
+        padding: 7% 20%;
+        background-image: url(../images/home-parallax.webp);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+
+        >figure {
+            >img {
+                border-radius: 50%;
+            }
+        }
+
+        >p {
+            width: 100%;
+            font-size: 18px;
+            line-height: 30px;
+            color: white;
+            text-align-last: center;
+        }
+
+        >h5 {
+            font-size: 18px;
+            line-height: 36px;
+            color: white;
+        }
+    }
+
+    >.six {
+        padding: 60px 20%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 120vh;
+        border-bottom: 15px solid rgb(161, 161, 199);
+
+        >h2 {
+            width: 100%;
+            font-size: 54px;
+            font-weight: normal;
+            color: rgb(51, 51, 51);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            font-family: "Nixie One", system-ui;
+            height: 60px;
+
+        }
+
+        >div {
+            &:first-of-type {
+                height: 1px;
+                width: 25%;
+                background-color: rgb(51, 51, 51);
+            }
+
+            &:last-of-type {
+                width: 100%;
+                height: 65vh;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                >figure {
+                    height: 100%;
+                    width: 32%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.208), -1px -1px 5px rgba(0, 0, 0, 0.208);
+
+                    >a {
+                        width: 100%;
+                        height: 40%;
+
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    >div {
+                        width: 100%;
+                        height: 50%;
+                        padding: 20px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: space-between;
+
+
+
+                        >span {
+                            background-color: rgb(240, 240, 237);
+                            font-size: 11px;
+                            color: rgb(116, 116, 116);
+                            padding: 3px;
+                            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.208), -1px -1px 5px rgba(0, 0, 0, 0.208);
+                        }
+
+                        >p {
+                            font-size: 15px;
+                            line-height: 30px;
+                            color: rgb(116, 116, 116);
+                        }
+
+                        >a {
+                            &:first-of-type {
+                                font-size: 24px;
+                                line-height: 28px;
+                                color: rgb(102, 102, 164);
+                                font-family: "Nixie One", system-ui;
+                                display: flex;
+                                width: 100%;
+
+
+                            }
+
+                            &:nth-of-type(2) {
+                                background-color: rgb(240, 240, 237);
+                                margin-left: 15px;
+                                padding: 3px 8px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                box-shadow: 0.1px 0.1px 5px rgba(0, 0, 0, 0.208), -0.1px -0.1px 5px rgba(0, 0, 0, 0.208);
+
+                                >i {
+                                    font-size: 11px;
+                                    color: rgb(102, 102, 164);
+                                }
+
+                                >span {
+                                    font-size: 11px;
+                                    color: rgb(102, 102, 164);
+                                }
+                            }
+
+                            &:last-of-type {
+                                font-size: 14px;
+                                line-height: 2px;
+                                color: black;
+                                position: relative;
+                                text-transform: capitalize;
+                                transition: .4s;
+
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    right: 0%;
+                                    bottom: -10px;
+                                    height: 1px;
+                                    width: 100%;
+                                    background-color: black;
+                                    transition: .4s;
+                                }
+
+                                &:hover {
+                                    color: rgb(102, 102, 164);
+
+                                    &::after {
+                                        width: 0;
+                                        left: 0%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        >p {
+            font-size: 24px;
+            line-height: 48px;
+            color: rgb(102, 102, 164);
+            text-align-last: center;
+            font-family: "Nixie One", system-ui;
+            width: 80%;
+        }
+    }
+
+    >.seven {
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(58, 58, 79);
+        display: flex;
+        flex-wrap: wrap;
+
+
+        >div {
+            &:first-of-type {
+                width: 100%;
+                height: 50%;
+                border-bottom: 1px solid rgba(111, 111, 163, 0.737);
+                display: flex;
+                flex-wrap: wrap;
+                padding: 60px 20%;
+
+                >figure {
+                    height: 100%;
+                    width: 40%;
+                }
+
+                >nav {
+                    height: 100%;
+                    width: 60%;
+
+                    >ul {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 80px;
+
+                        >li {
+                            margin-top: 20px;
+
+                            &:hover {
+                                >a {
+                                    color: rgb(102, 102, 164);
+                                }
+                            }
+
+                            >a {
+                                text-transform: uppercase;
+                                font-size: 16px;
+                                line-height: 32px;
+                                color: white;
+                                padding: 10px 10px;
+                                transition: .4s;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:last-of-type {
+                width: 100%;
+                height: 50%;
+                padding: 60px 20%;
+                display: flex;
+                flex-wrap: wrap;
+
+                >h4 {
+                    height: 100%;
+                    width: 60%;
+                    color: white;
+                    font-weight: normal;
+                    font-size: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                >nav {
+                    height: 100%;
+                    width: 40%;
+
+                    >ul {
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 15px;
+
+                        >li {
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 5px;
+                            transition: .4s;
+                            background-color: rgb(69, 69, 94);
+                            position: relative;
+
+                            &:nth-of-type(1) {
+                                >a {
+                                    &::after {
+                                        content: "Linkedin";
+                                        height: 20px;
+                                        width: 40px;
+                                        position: absolute;
+                                        left: -5px;
+                                        top: -45px;
+                                        color: white;
+                                        background-color: rgba(0, 0, 0, 0.806);
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 10px;
+                                        border-radius: 5px;
+                                        padding: 5px;
+                                        opacity: 0;
+                                        transition: .4s;
+
+                                    }
+                                }
+
+                            }
+
+                            &:nth-of-type(2) {
+                                >a {
+                                    &::after {
+                                        content: "Github";
+                                        height: 20px;
+                                        width: 40px;
+                                        position: absolute;
+                                        left: -5px;
+                                        top: -45px;
+                                        color: white;
+                                        background-color: rgba(0, 0, 0, 0.806);
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 10px;
+                                        border-radius: 5px;
+                                        padding: 5px;
+                                        opacity: 0;
+                                        transition: .4s;
+
+                                    }
+                                }
+
+                            }
+
+                            &:nth-of-type(3) {
+                                >a {
+                                    &::after {
+                                        content: "Instagram";
+                                        height: 20px;
+                                        width: 40px;
+                                        position: absolute;
+                                        left: -10px;
+                                        top: -45px;
+                                        color: white;
+                                        background-color: rgba(0, 0, 0, 0.806);
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 10px;
+                                        border-radius: 5px;
+                                        padding: 5px 10px;
+                                        opacity: 0;
+                                        transition: .4s;
+
+                                    }
+                                }
+
+                            }
+
+                            &:hover {
+                                background-color: rgb(102, 102, 164);
+
+                                >a {
+                                    &::after {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+
+                            >a {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 100%;
+                                width: 100%;
+                                border-radius: 5px;
+
+                                >i {
+                                    font-size: 28px;
+                                    color: white;
+                                    display: flex;
+                                    height: 100%;
+                                    width: 100%;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
